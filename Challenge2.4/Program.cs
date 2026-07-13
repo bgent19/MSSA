@@ -52,22 +52,13 @@ double percentage = (sum / total) * 100;
 
 Console.WriteLine($"Percentage = {percentage:0.00}");
 
-string div = "";
-switch (percentage)
+string div = percentage switch
 {
-    case (> 79.99):
-        div = "First";
-        break;
-    case (> 69.99):
-        div = "Second";
-        break;
-    case (> 59.99):
-        div = "Third";
-        break;
-    default:
-        div = "Fail";
-        break;
-}
+    (> 79.99) => "First",
+    (> 69.99) => "Second",
+    (> 59.99) => "Third",
+    _ => "Fail",
+};
 
 Console.WriteLine($"Division = {div}");
 
@@ -80,12 +71,12 @@ class Student
 {
     public int rollNo;
     public string name;
-    public Mark[] classes = new Mark[]
-    {
+    public Mark[] classes = 
+    [
         new Mark { subject = "Physics", grade = 0 },
         new Mark { subject = "Chemistry", grade = 0 },
         new Mark { subject = "Computer Application", grade = 0 }
-    };
+    ];
 }
 
 class Mark
