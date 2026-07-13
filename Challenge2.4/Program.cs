@@ -38,6 +38,39 @@ foreach (var (i, name) in student.classes.Index())
     Console.WriteLine($"Marks in {student.classes[i].subject} : {student.classes[i].grade}");
 }
 
+int sum = 0;
+double total = 0.0;
+foreach (var mark in student.classes)
+{
+    sum += mark.grade;
+    total += 100.0;
+}
+
+Console.WriteLine($"Total Marks = {sum}");
+
+double percentage = (sum / total) * 100;
+
+Console.WriteLine($"Percentage = {percentage:0.00}");
+
+string div = "";
+switch (percentage)
+{
+    case (> 79.99):
+        div = "First";
+        break;
+    case (> 69.99):
+        div = "Second";
+        break;
+    case (> 59.99):
+        div = "Third";
+        break;
+    default:
+        div = "Fail";
+        break;
+}
+
+Console.WriteLine($"Division = {div}");
+
 
 
 
