@@ -1,0 +1,14 @@
+C:\Users\bgent\source\repos\Challenge2.2\bin\Debug\net10.0\Challenge2.2.exe
+C:\Users\bgent\source\repos\Challenge2.2\bin\Debug\net10.0\Challenge2.2.deps.json
+C:\Users\bgent\source\repos\Challenge2.2\bin\Debug\net10.0\Challenge2.2.runtimeconfig.json
+C:\Users\bgent\source\repos\Challenge2.2\bin\Debug\net10.0\Challenge2.2.dll
+C:\Users\bgent\source\repos\Challenge2.2\bin\Debug\net10.0\Challenge2.2.pdb
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\Challenge2.2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\Challenge2.2.AssemblyInfoInputs.cache
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\Challenge2.2.AssemblyInfo.cs
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\Challenge2.2.csproj.CoreCompileInputs.cache
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\Challenge2.2.dll
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\refint\Challenge2.2.dll
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\Challenge2.2.pdb
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\Challenge2.2.genruntimeconfig.cache
+C:\Users\bgent\source\repos\Challenge2.2\obj\Debug\net10.0\ref\Challenge2.2.dll
