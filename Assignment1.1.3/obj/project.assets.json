@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bgent\\source\\repos\\Assignment1.1.3\\Assignment1.1.3.csproj",
+      "projectUniqueName": "C:\\Users\\bgent\\source\\repos\\MSSA\\Assignment1.1.3\\Assignment1.1.3.csproj",
       "projectName": "Assignment1.1.3",
-      "projectPath": "C:\\Users\\bgent\\source\\repos\\Assignment1.1.3\\Assignment1.1.3.csproj",
+      "projectPath": "C:\\Users\\bgent\\source\\repos\\MSSA\\Assignment1.1.3\\Assignment1.1.3.csproj",
       "packagesPath": "C:\\Users\\bgent\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bgent\\source\\repos\\Assignment1.1.3\\obj\\",
+      "outputPath": "C:\\Users\\bgent\\source\\repos\\MSSA\\Assignment1.1.3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bgent\\source\\repos\\Challenge2.2\\Challenge2.2.csproj",
+      "projectUniqueName": "C:\\Users\\bgent\\source\\repos\\MSSA\\Challenge2.2\\Challenge2.2.csproj",
       "projectName": "Challenge2.2",
-      "projectPath": "C:\\Users\\bgent\\source\\repos\\Challenge2.2\\Challenge2.2.csproj",
+      "projectPath": "C:\\Users\\bgent\\source\\repos\\MSSA\\Challenge2.2\\Challenge2.2.csproj",
       "packagesPath": "C:\\Users\\bgent\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bgent\\source\\repos\\Challenge2.2\\obj\\",
+      "outputPath": "C:\\Users\\bgent\\source\\repos\\MSSA\\Challenge2.2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
