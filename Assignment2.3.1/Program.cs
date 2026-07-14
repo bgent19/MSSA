@@ -8,9 +8,11 @@ using StreamWriter outFile = new("details.txt");
     {
         outFile.WriteLine(s);
     }
+
+    outFile.Close();
 }
 
-outFile.Close();
+
 
 try
 {
