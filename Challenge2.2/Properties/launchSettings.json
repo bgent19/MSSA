@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Challenge2.2": {
+      "commandName": "Project",
+      "debugEngines": "managed"
+    }
+  }
+}
