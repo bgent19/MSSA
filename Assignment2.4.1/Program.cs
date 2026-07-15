@@ -29,8 +29,8 @@ for (int i = 0; i < nums.Length; i++)
 }
 
 int sum = 0;
-for (int i = 0; i < nums.Length; i++)
+foreach (int num in nums)
 {
-    sum += nums[i];
+    sum += num;
 }
 Console.WriteLine($"Sum of all elements stored in the array is : {sum}");
