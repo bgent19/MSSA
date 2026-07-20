@@ -5,20 +5,7 @@ string yesNo = IsLeapYear(y) ? "is" : "is not";
 
 Console.WriteLine($"{y} {yesNo} a leap year");
 
-static bool IsLeapYear(int year)
+static bool IsLeapYear(int y)
 {
-    if((year%4 == 0) && (year % 400 == 0))
-    {
-        return true;
-    }
-    if((year % 4 == 0) && (year % 100 == 0))
-    {
-        return false;
-    }
-    if ((year % 4 == 0))
-    {
-        return true;
-    }
-
-    return false;
+    return y % 4 == 0 && (y % 100 != 0 || y % 400 == 0);
 }
