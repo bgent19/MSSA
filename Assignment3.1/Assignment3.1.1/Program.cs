@@ -7,8 +7,8 @@ static string EvenNumbers(int min, int max)
 {
     StringBuilder sb = new();
 
-    // find first even number from min
-    if (min == 0)
+    // find first even number from min(> 0)
+    if (min <= 0)
         min = 2;
     else if ((min % 2) != 0)
         ++min;
