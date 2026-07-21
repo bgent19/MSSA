@@ -2,4 +2,5 @@
   <Project Path="Challenge3.1/Challenge3.1.csproj" />
   <Project Path="Challenge3.2/Challenge3.2.csproj" />
   <Project Path="Challenge3.3/Challenge3.3.csproj" Id="113047a6-b5d3-42e6-af8f-c27a0aea011f" />
+  <Project Path="Challenge3.4/Challenge3.4.csproj" Id="8367df9e-54ad-4940-b439-a8ef8a9431b1" />
 </Solution>
