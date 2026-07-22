@@ -7,7 +7,7 @@ Console.WriteLine($"Was that a palindrome? {IsPalindrome(text)}");
 static bool IsPalindrome(string s)
 {
 
-    // clean text
+    // clean text -> regex [a-zA-Z0-9]*
     string r = new string(s.Where(c => !char.IsWhiteSpace(c) && !char.IsPunctuation(c)).ToArray());
     r = r.ToLower();
 

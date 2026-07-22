@@ -26,7 +26,7 @@ int RemoveABCD(string s)
         s = s.Replace("CD", "");
 
 
-        // if neither removed anything then the condition is true
+        // if neither removed anything then s.Length won't change
     }
     while (stringLen != s.Length);
     
