@@ -45,9 +45,14 @@ int RemoveABCDNoCheat(string s)
         if (removed[i]) continue;
 
         if (s[i] == 'A' && FindAndMarkMatch(s, removed, i, 'B'))
+        {
             BacktrackToUnmarked(removed, ref i);
+
+        }
         else if (s[i] == 'C' && FindAndMarkMatch(s, removed, i, 'D'))
+        {
             BacktrackToUnmarked(removed, ref i);
+        }
     }
 
     return removed.Count(c => !c);
