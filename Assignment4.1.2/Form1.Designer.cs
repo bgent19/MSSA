@@ -1,6 +1,6 @@
 ﻿namespace Assignment4._1._2
 {
-    partial class Form1
+    partial class Calculator
     {
         /// <summary>
         ///  Required designer variable.
@@ -129,7 +129,7 @@
             textBoxResult.Size = new Size(150, 27);
             textBoxResult.TabIndex = 9;
             // 
-            // Form1
+            // Calculator
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -145,8 +145,8 @@
             Controls.Add(textBoxFirstNumber);
             Controls.Add(labelSecindNumber);
             Controls.Add(labelFirstNumber);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Calculator";
+            Text = "Calculator";
             ResumeLayout(false);
             PerformLayout();
         }
