@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace Assignment4._2
 {
@@ -23,7 +18,6 @@ namespace Assignment4._2
             dataGridViewStudents.DataSource = bindingSource;
 
             SeedStudents();
-            SortStudentsById();
         }
 
         private void SeedStudents()
@@ -91,9 +85,21 @@ namespace Assignment4._2
                     StudentName = textBoxName.Text,
                     GPA = numericUpDownGPA.Value
                 };
-                students.Add(newStudent);
 
-                SortStudentsById();
+                var studentList = students.ToList();
+
+                int i = 0;
+                while(i < studentList.Count())
+                {
+                    if (studentList[i].StudentId > studentId)
+                    {
+                        break;
+                    }
+                    i++;
+                }
+
+                students.Insert(i,newStudent);
+
                 SelectStudentRow(newStudent);
             }
 
@@ -105,22 +111,7 @@ namespace Assignment4._2
 
             students.RemoveAt(index);
 
-            SortStudentsById();
             SelectStudentRow(students.First());
-        }
-
-        private void SortStudentsById()
-        {
-            var sorted = students.OrderBy(s => s.StudentId).ToList();
-
-            students.RaiseListChangedEvents = false;
-            students.Clear();
-            foreach (var student in sorted)
-            {
-                students.Add(student);
-            }
-            students.RaiseListChangedEvents = true;
-            students.ResetBindings();
         }
 
         private void SelectStudentRow(Student student)
