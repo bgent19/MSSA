@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             buttonAddStudent = new Button();
             buttonDeleteStudent = new Button();
             textBoxStudentId = new TextBox();
@@ -39,10 +38,8 @@
             labelGpa = new Label();
             dataGridViewStudents = new DataGridView();
             buttonSaveTopStudent = new Button();
-            bindingSourceStudents = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)numericUpDownGPA).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewStudents).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceStudents).BeginInit();
             SuspendLayout();
             // 
             // buttonAddStudent
@@ -53,6 +50,7 @@
             buttonAddStudent.TabIndex = 0;
             buttonAddStudent.Text = "Add Student";
             buttonAddStudent.UseVisualStyleBackColor = true;
+            buttonAddStudent.Click += buttonAddStudent_Click;
             // 
             // buttonDeleteStudent
             // 
@@ -62,6 +60,7 @@
             buttonDeleteStudent.TabIndex = 1;
             buttonDeleteStudent.Text = "Delete Student";
             buttonDeleteStudent.UseVisualStyleBackColor = true;
+            buttonDeleteStudent.Click += buttonDeleteStudent_Click;
             // 
             // textBoxStudentId
             // 
@@ -116,16 +115,19 @@
             // 
             // dataGridViewStudents
             // 
+            dataGridViewStudents.AllowUserToAddRows = false;
+            dataGridViewStudents.AllowUserToDeleteRows = false;
+            dataGridViewStudents.AllowUserToResizeRows = false;
             dataGridViewStudents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewStudents.Location = new Point(227, 12);
             dataGridViewStudents.Name = "dataGridViewStudents";
             dataGridViewStudents.RowHeadersWidth = 51;
-            dataGridViewStudents.Size = new Size(561, 224);
+            dataGridViewStudents.Size = new Size(403, 224);
             dataGridViewStudents.TabIndex = 8;
             // 
             // buttonSaveTopStudent
             // 
-            buttonSaveTopStudent.Location = new Point(425, 242);
+            buttonSaveTopStudent.Location = new Point(349, 242);
             buttonSaveTopStudent.Name = "buttonSaveTopStudent";
             buttonSaveTopStudent.Size = new Size(149, 30);
             buttonSaveTopStudent.TabIndex = 9;
@@ -136,7 +138,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 284);
+            ClientSize = new Size(642, 284);
             Controls.Add(buttonSaveTopStudent);
             Controls.Add(dataGridViewStudents);
             Controls.Add(labelGpa);
@@ -148,10 +150,9 @@
             Controls.Add(buttonDeleteStudent);
             Controls.Add(buttonAddStudent);
             Name = "TeacherDashboardForm";
-            Text = "Form1";
+            Text = "Dashboard";
             ((System.ComponentModel.ISupportInitialize)numericUpDownGPA).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewStudents).EndInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSourceStudents).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -168,6 +169,5 @@
         private Label labelGpa;
         private DataGridView dataGridViewStudents;
         private Button buttonSaveTopStudent;
-        private BindingSource bindingSourceStudents;
     }
 }

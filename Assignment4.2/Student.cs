@@ -8,7 +8,7 @@ namespace Assignment4._2
     {
         public int StudentId { get; set; }
         public string StudentName { get; set; }
-        public double GPA { get; set; }
+        public decimal GPA { get; set; }
 
         public override string ToString()
         {

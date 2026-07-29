@@ -21,6 +21,9 @@ namespace Assignment4._2
             }
             else
             {
+                MessageBox.Show($"Incorrect password entered for {textBoxUserId.Text}",
+                                 "Login Failed",
+                                 MessageBoxButtons.OK);
                 textBoxPassword.Text = string.Empty;
             }
         }
