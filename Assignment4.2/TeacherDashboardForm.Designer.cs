@@ -133,6 +133,7 @@
             buttonSaveTopStudent.TabIndex = 9;
             buttonSaveTopStudent.Text = "Save Top Student";
             buttonSaveTopStudent.UseVisualStyleBackColor = true;
+            buttonSaveTopStudent.Click += buttonSaveTopStudent_Click;
             // 
             // TeacherDashboardForm
             // 

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment4._2
 {
@@ -136,6 +137,25 @@ namespace Assignment4._2
             dataGridViewStudents.CurrentCell = row.Cells[0];
         }
 
+        private async void buttonSaveTopStudent_Click(object sender, EventArgs e)
+        {
+            Student? top = students.OrderByDescending(s => s.GPA).FirstOrDefault();
 
+            SelectStudentRow(top);
+
+            try
+            { await File.WriteAllTextAsync("TopStudent.txt", top.ToString());
+            }
+            catch(IOException ex) {
+                MessageBox.Show(ex.Message,
+                             "Export Failed",
+                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+            MessageBox.Show($"Top student exported to\n{Path.GetFullPath("TopStudent.txt")}",
+                             "File Saved",
+                             MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
