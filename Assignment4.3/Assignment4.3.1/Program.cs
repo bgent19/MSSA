@@ -23,9 +23,9 @@ public class Customer
 
     public void PrintCharges()
     {
-        Tier[] tiers = [new Tier { limit = 199, rate = 1.20m},
-                        new Tier { limit = 201, rate = 1.50m}, // 400 - 199
-                        new Tier { limit = 200, rate = 1.80m}, // 600 - 400
+        Tier[] tiers = [new Tier { limit = 199,          rate = 1.20m},
+                        new Tier { limit = 200,          rate = 1.50m}, // 399 - 199
+                        new Tier { limit = 200,          rate = 1.80m}, // 599 - 399
                         new Tier { limit = int.MaxValue, rate = 2.00m}];
 
         decimal chargeAmount = 0, surchargeAmount = 0;
@@ -59,7 +59,7 @@ public class Customer
 
         Console.WriteLine($"Amount Charged: {chargeAmount:C}");
         Console.WriteLine($"Surcharge Amount: {surchargeAmount:C}");
-        Console.WriteLine($"Ttoal Amount Due: {(chargeAmount + surchargeAmount):C}");
+        Console.WriteLine($"Total Amount Due: {(chargeAmount + surchargeAmount):C}");
     }
 }
 
