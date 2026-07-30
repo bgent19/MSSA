@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Challenge4.1/Challenge4.1.csproj" />
   <Project Path="Challenge4.2/Challenge4.2.csproj" />
+  <Project Path="Challenge4.3/Challenge4.3.csproj" Id="a9e0caab-4df2-4c71-a058-4219c1c78cf7" />
 </Solution>
