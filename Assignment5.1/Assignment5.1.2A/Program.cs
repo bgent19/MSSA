@@ -22,12 +22,12 @@ static void FibIt(int n)
     }
     else
     {
-        int num1 = 0, num2 = 1;
-        int cur = num1 + num2; // cur = 1, n = 3
+        int num2 = 1;
+        int cur = num2; // cur = 1, n = 3
         Console.Write("[0,1,1");
         for(int i = 3; i < n; i++)
         {
-            (cur, num2, num1) = (cur + num2, cur, num2);
+            (cur, num2) = (cur + num2, cur);
             Console.Write($",{cur}");
         }
         Console.WriteLine("]");
