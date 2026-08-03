@@ -8,13 +8,11 @@ static bool ContainsDuplicate(int[] nums)
 
     foreach(int n in nums)
     {
-        if(seen.Contains(n))
+        if(!seen.Add(n))
         {
             return true;
         }
-    
-        seen.Add(n);
-        
     }
+
     return false;
 }
