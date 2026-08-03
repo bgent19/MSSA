@@ -1,19 +1,19 @@
-﻿Console.WriteLine(MissingNumber([3, 0, 1])); // 2
-Console.WriteLine(MissingNumber([0, 1])); // 2
-Console.WriteLine(MissingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1])); // 8
+﻿Console.WriteLine(SingleNumber([2, 2, 1])); // 1
+Console.WriteLine(SingleNumber([4, 1, 2, 1, 2])); // 4
+Console.WriteLine(SingleNumber([1])); // 1
 
 
-static int MissingNumber(int[] nums)
+static int SingleNumber(int[] nums)
 {
-    int len = nums.Length;
+    HashSet<int> seen = [];
 
-    int sumTotal = len, sumFound = 0;
-
-    for(int i = 0; i < len; i++)
+    foreach(int n in nums)
     {
-        sumTotal += i;
-        sumFound += nums[i];
+        if(!seen.Remove(n))
+        {
+            seen.Add(n);
+        }
     }
 
-    return sumTotal - sumFound;
+    return seen.First();
 }
