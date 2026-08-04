@@ -4,12 +4,10 @@ Console.WriteLine(LengthOfLastWord("luffy is still joyboy"));       // 6
 
 static int LengthOfLastWord(string s)
 {
-    int p = s.Length, length = 0;
+    int length = 0;
 
-    while (p > 0) // while still looking through string in reverse order
+    for(int p = s.Length - 1;  p > 0; p--) // look through string in reverse order
     {
-        p--;
-
         if (s[p] != ' ') // This is part of last word
         {
             length++;
