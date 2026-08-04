@@ -22,5 +22,6 @@ static bool RIsPalindrome(string s, int l, int r)
     }
 
     // recurive case (only check the l and r pointers for equality)
+    // recurse inwards
     return (s[l] == s[r]) && RIsPalindrome(s, l + 1, r - 1);
 }
