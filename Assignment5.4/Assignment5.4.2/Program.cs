@@ -7,13 +7,13 @@ PrintMatrix(matrix, size);
 Console.WriteLine($"Addition of the right Diagnoal element is: {DiagonalSum(matrix, size)}");
 
 
-static int DiagonalSum(int[,] mat, int dim)
+static int DiagonalSum(int[,] mat, int dim) // antidiagonal
 {
     int sum = 0;
 
     for (int i = 0; i < dim; i++)
     {
-        sum += mat[i,i];
+        sum += mat[i,dim - 1 - i];
     }
 
     return sum;
