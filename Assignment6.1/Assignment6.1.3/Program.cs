@@ -18,7 +18,7 @@ void MoveZeroes(int[] arr)
         if (arr[i] != 0 && i > zeroPointer)
         { 
             (arr[i], arr[zeroPointer]) = (arr[zeroPointer], arr[i]);
-            while (arr[++zeroPointer] != 0) ; 
+            zeroPointer++; 
         }
     }
 }
