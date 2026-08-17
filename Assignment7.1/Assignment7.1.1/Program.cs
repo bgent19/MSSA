@@ -1,4 +1,6 @@
-﻿int[] numbers = Enumerable.Range(0, 10)
+﻿// Selection Sort Implementation
+
+int[] numbers = Enumerable.Range(0, 10)
                           .Select(_ => Random.Shared.Next(1, 101))
                           .ToArray();
 
