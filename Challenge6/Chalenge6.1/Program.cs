@@ -15,6 +15,10 @@ Console.WriteLine();
 
 static void Rotate(int[][] matrix)
 {
+
+    // ROW_new = n - COL_old
+    // COL_new = ROW_old
+
     // Step 1: Transpose
     for (int row = 0; row < matrix.Length; row++)
     {
