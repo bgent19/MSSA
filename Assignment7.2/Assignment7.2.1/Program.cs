@@ -51,12 +51,16 @@ static int[] _Merge(int[] a, int[] b)
     }
 
     // append a
+    // a[itrA..].CopyTo(result, itrR);
+
     while (itrA < a.Length)
     {
         result[itrR++] = a[itrA++];
     }
 
     // append b
+    // b[itrB..].CopyTo(result, itrR);
+
     while (itrB < b.Length)
     {
         result[itrR++] = b[itrB++];
