@@ -24,7 +24,7 @@ static TreeNode SearchBST(TreeNode root, int val)
         return root;
     }
 
-    return val < root.val ? SearchBST(root.left, val) : SearchBST(root.left, val);
+    return val < root.val ? SearchBST(root.left, val) : SearchBST(root.right, val);
 }
 
 static Tree ArrayToBST(int[] a)
