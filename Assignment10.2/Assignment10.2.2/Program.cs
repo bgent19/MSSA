@@ -14,10 +14,22 @@ List<Employee> employees = new List<Employee>
     new Employee { Id = 10, Name = "Elena Petrova", Age = 23, Salary = 10500m }
 };
 
+var employeeQuery = from employee in employees
+                    where (employee.Salary > 5000 && employee.Age < 30)
+                    select employee;
+
+Console.WriteLine(string.Join(", ", employeeQuery));
+
+
 class Employee
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public int Age { get; set; }
     public decimal Salary { get; set; }
+
+    public override string ToString()
+    {
+        return $"{Name} ({Id})";
+    }
 }
