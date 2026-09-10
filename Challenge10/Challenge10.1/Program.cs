@@ -12,10 +12,9 @@ char FindTheDifference(string s, string t)
 
     foreach (char c in t)
     {
-        int val;
-        bool found = letters.TryGetValue(c, out val);
+        bool found = letters.TryGetValue(c, out int val);
 
-        if(!found || val == 0)
+        if (!found || val == 0)
         {
             return c;
         }
