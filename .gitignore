@@ -40,3 +40,5 @@ Thumbs.db
 .idea/
 *.sln.iml
 *.DotSettings.user
+/Assignment11.3/movies.db-shm
+/Assignment11.3/movies.db-wal
