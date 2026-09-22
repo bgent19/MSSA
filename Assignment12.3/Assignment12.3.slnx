@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="Notes/Notes.csproj" />
   <Project Path="Assignment12.3.1/Assignment12.3.1.csproj" />
 </Solution>
